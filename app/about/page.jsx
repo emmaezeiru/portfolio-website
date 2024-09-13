@@ -1,4 +1,4 @@
-export const About = () => {
+const About = () => {
   return (
     <div>
         <div class="container">
@@ -18,3 +18,5 @@ export const About = () => {
     </div>
   )
 }
+
+export default About
