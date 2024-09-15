@@ -1,4 +1,6 @@
-export const Service = () => {
+import React from 'react'
+
+const Services = () => {
   return (
     <div>
         <div>
@@ -18,4 +20,4 @@ export const Service = () => {
   )
 }
 
-ra
+export default Services
