@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from 'framer-motion ';
 
 export default function Home() {
   return (
@@ -10,9 +9,12 @@ export default function Home() {
       >
         <div class="sm:text-center lg:text-left">
           <h1 class="text-4xl tracking-tight font-extrabold text-black sm:text-5xl md:text-6xl">
-            Hi, I am Emma
+              Hi, I am Emma
+            <div class="overflow-hidden relative w-[200px]">
+              <span class="block text-blue-500 z-0 lg:inlineabsolute animate-loop-text">Backend Developer</span>
+            </div>
           </h1>
-          <p>I am a backend / Full-Stack Developer</p>
+          <p>I am a Backend / Full-Stack Developer</p>
           <div>
             <Link href="#">
             </Link>

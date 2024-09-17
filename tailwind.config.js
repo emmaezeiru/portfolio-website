@@ -11,6 +11,15 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      animation: {
+        'loop-text': 'loopText 4s infinite',
+      },
+      keyframes: {
+        loopText: {
+          '0%, 100%': { transform: 'translateX(0)', opacity: 1 },
+          '50%': { transform: 'translateX(-100%)', opacity: 0 },
+        },
+      },
     },
   },
   plugins: [],
