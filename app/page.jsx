@@ -16,7 +16,7 @@ export default function Home() {
               <span class="block text-blue-500 z-0 lg:inlineabsolute animate-loop-text">Backend Developer</span>
             </div>
           </h1>
-          <p>I am a Backend / Full-Stack Developer</p>
+          <p class="mt-3 text-base text-black sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">I am a Backend / Full-Stack Developer</p>
           <div class="flex md:justify-start">
           {contactLinks.map((el, index) => (
             <Link 
