@@ -1,5 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
+import { contactLinks } from "./constants";
+
 
 export default function Home() {
   return (
@@ -15,15 +17,22 @@ export default function Home() {
             </div>
           </h1>
           <p>I am a Backend / Full-Stack Developer</p>
-          <div>
-            <Link href="#">
+          <div class="flex md:justify-start">
+          {contactLinks.map((el, index) => (
+            <Link 
+              key={index} 
+              href={el.link} 
+              className="mr-5 cursor-pointer mt-8 hover:scale-125"
+            >
+              <Image 
+                alt={el.name || "Contact Link"} // Provide a meaningful alt or fallback
+                src={el.url} // Assuming `el.url` contains the image path
+                width={50} // Adjust width
+                height={50} // Adjust height
+              />
             </Link>
-            <Link href="#">
-            </Link>
-            <Link href="#">
-            </Link>
-            <Link href="#">
-            </Link>
+          ))}
+
             <button>Resume</button>
           </div>
         </div>
