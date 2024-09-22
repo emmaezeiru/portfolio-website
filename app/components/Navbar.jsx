@@ -14,12 +14,12 @@ const Navbar = () => {
           <div class="hidden justify-between items-center w-full md:flex md:w-auto">
             <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-md md:font-medium">
               <li>
-                <Link href="#" class="block py-2 px-3 text-black hover:bg-blue-500 hover:text-white rounded-md">
+                <Link href="/" class="block py-2 px-3 text-black hover:bg-blue-500 hover:text-white rounded-md">
                   Home
                 </Link>
               </li>
               <li>
-                <Link href="#" class="block py-2 px-3 text-black hover:bg-blue-500 hover:text-white rounded-md">About</Link>
+                <Link href="/about" class="block py-2 px-3 text-black hover:bg-blue-500 hover:text-white rounded-md">About</Link>
               </li>
               <li>
                 <Link href="#" class="block py-2 px-3 text-black hover:bg-blue-500 hover:text-white rounded-md">Services</Link>
