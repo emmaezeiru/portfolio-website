@@ -3,9 +3,11 @@ import Link from "next/link";
 import { contactLinks } from "./constants";
 import cloud from "../public/cloudBg.png"
 import webd from "../public/webdev.svg"
+import About from "./about/page";
 
 export default function Home() {
   return (
+    <div>
     <div
       style={{
       backgroundImage: `url(${cloud.src})`,
@@ -63,5 +65,8 @@ export default function Home() {
         ></div>
       </main>
     </div>
+    <About />
+    </div>
   );
+  
 }
