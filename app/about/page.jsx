@@ -4,7 +4,7 @@ const About = () => {
         <div class="max-w-7xl mx-auto x-4 sm:px-6 lg:px-8 md:mt-0 pt-24 pb-12">
             <h2 class="text-5xl font-bold px-4 md:px-0 text-center">About Me</h2>
             <div>
-                <h4 class="mt-12 text-3xl">A bit about me</h4>
+                <h4 class="mt-12 text-3xl font-semibold text-blue-500">A bit about me</h4>
                 <p>I'm a self-taught web developer and Mobile App Developer with experience in designing new features from ideation to production, implementation of wireframes and design flows into high performance software applications. I take into consideration the user experience while writing reusable and efficient code. I passionately combine good design, technology, and innovation in all my projects, which I like to accompany from the first idea to release.Currently, I'm focused on the backend development.</p>
             </div>
             <div>
