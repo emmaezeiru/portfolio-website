@@ -29,20 +29,20 @@ export default function Home() {
           </h1>
           <p class="mt-3 text-base text-black sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">I am a Backend / Full-Stack Developer</p>
           <div class="flex md:justify-start">
-          {contactLinks.map((el, index) => (
-            <Link 
-              key={index} 
-              href={el.link} 
-              className="mr-5 cursor-pointer mt-8 hover:scale-125"
-            >
-              <Image 
-                alt={el.name || "Contact Link"} 
-                src={el.url}
-                width={40} 
-                height={40}
-              />
-            </Link>
-          ))}
+            {contactLinks.map((el, index) => (
+              <Link 
+                key={index} 
+                href={el.link} 
+                className="mr-5 cursor-pointer mt-8 hover:scale-125"
+              >
+                <Image 
+                  alt={el.name || "Contact Link"} 
+                  src={el.url}
+                  width={40} 
+                  height={40}
+                />
+              </Link>
+            ))}
           </div>
           <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div className="mt-3 sm:mt-0 cursor-pointer w-1/2">

@@ -8,6 +8,11 @@ const nextConfig = {
           port: '', 
           pathname: '/**', 
         },
+        {
+          protocol: 'https',
+          hostname: 'pagepro.co',
+          pathname: '/**', // Match all paths for pagepro.co
+        },
       ],
     },
   };
