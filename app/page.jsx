@@ -4,6 +4,7 @@ import { contactLinks } from "./constants";
 import cloud from "../public/cloudBg.png"
 import webd from "../public/webdev.svg"
 import About from "./about/page";
+import Services from "./services/page";
 
 export default function Home() {
   return (
@@ -66,6 +67,7 @@ export default function Home() {
       </main>
     </div>
     <About />
+    <Services />
     </div>
   );
   
