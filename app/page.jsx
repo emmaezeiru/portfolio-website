@@ -5,6 +5,8 @@ import cloud from "../public/cloudBg.png"
 import webd from "../public/webdev.svg"
 import About from "./about/page";
 import Services from "./services/page";
+import Projects from "./projects/page";
+import Contact from "./contact/page";
 
 export default function Home() {
   return (
@@ -47,7 +49,7 @@ export default function Home() {
           </div>
           <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div className="mt-3 sm:mt-0 cursor-pointer w-1/2">
-                <button class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-200 md:py-4 md:text-lg md:px-10">
+                <button class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-400 md:py-4 md:text-lg md:px-10">
                   Resume
                 </button>
               </div>
@@ -68,7 +70,8 @@ export default function Home() {
     </div>
     <About />
     <Services />
+    <Projects />
+    <Contact />
     </div>
   );
-  
 }

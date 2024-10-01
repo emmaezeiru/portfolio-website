@@ -5,7 +5,7 @@ import Image from "next/image"
 const About = () => {
   return (
     <div class="bg-white" id="about">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 px-4 md:mt-0 pt-24 pb-12">
+        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8 px-4 md:mt-0 pt-24 pb-12 ">
             <h2 class="text-5xl font-bold px-4 md:px-0 text-center">
                 About Me
             </h2>
