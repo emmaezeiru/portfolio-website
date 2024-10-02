@@ -7,11 +7,11 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false); // State to manage dropdown visibility
 
   const links = [
-    { name: "Home", route: "/" },
-    { name: "About", route: "/about" },
-    { name: "Services", route: "/services" },
-    { name: "Projects", route: "/projects" },
-    { name: "Contact", route: "/contact" },
+    { name: "Home", id: "home" },
+    { name: "About", id: "about" },
+    { name: "Services", id: "services" },
+    { name: "Projects", id: "projects" },
+    { name: "Contact", id: "contact" },
   ];
 
   return (
@@ -21,6 +21,7 @@ const Navbar = () => {
           <Link 
             href="/" 
             className="font-bold text-xl"
+            scroll={true}
           >
             Emma Ezeiru
           </Link>
@@ -31,7 +32,8 @@ const Navbar = () => {
           <ul className="flex flex-row space-x-8 text-md font-medium">
             {links.map((el) => (
               <li key={el.name}>
-                <Link href={el.route}
+                <Link href={`#${el.id}`}
+                  scroll={true}
                   className="block py-2 px-3 text-black hover:bg-blue-500 hover:text-white rounded-md"
                 >
                   {el.name}
@@ -61,7 +63,8 @@ const Navbar = () => {
           <ul className="space-y-2">
             {links.map((el) => (
               <li key={el.name} onClick={() => setToggle(false)}>
-                <Link href={el.route}
+                <Link href={`#${el.id}`}
+                  scroll={true}
                   className="block py-2 px-3 text-black hover:bg-blue-500 hover:text-white rounded-md"
                 >
                   {el.name}
