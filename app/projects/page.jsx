@@ -1,5 +1,6 @@
 import Image from "next/image"
-import { techStack } from "../constants"
+import { projectCard } from "../components/card"
+import Link from "next/link"
 
 const Projects = () => {
   return (
@@ -14,25 +15,49 @@ const Projects = () => {
                 </h4>
             </div>
             
-            {/*
-            <div class="flex flex-wrap gap-6 mt-8 justify-center">
-              {techStack.map((el, index) => (
+            
+            <div class="mt-8 flex justify-between items-stretch flex-wrap">
+              {projectCard.map((el, index) => (
                 <div
                   key={index}
-                  class="flex flex-col items-center justify-center bg-gray-50 shadow-md rounded-lg p-4 w-36 h-36"
+                  class="max-w-xl bg-gray-200 rounded-lg border border-gray-200 shadow-lg my-8"
                 >
                   <Image
                     alt={el.name || "Tech Icon"}
                     src={el.link}
-                    width={40}
-                    height={40}
-                    class="mb-2"
+                    width={200}
+                    height={200}
+                    class="rounded-t-lg w-full"
                   />
-                  <span class="text-sm font-medium text-gray-700">{el.name}</span>
+                  <div class="p-5">
+                  <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">{el.name}</h5>
+                  <p class="mb-3 font-normal text-gray-700">{el.note}</p>
+                  <div class="flex justify-between">
+                    <Link 
+                      href="#"
+                      class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-200 focus:ring-4 focus:outline-none focus:ring-blue-300"
+                    >
+                      Visit Project
+                    </Link>
+                    <Link 
+                      key={index} 
+                      href={el.pLink} 
+                      class=""
+                    >
+                      <Image 
+                        alt={el.name || "Contact Link"} 
+                        src={el.pUrl}
+                        width={40} 
+                        height={40}
+                        class="hover:scale-110"
+                      />
+                    </Link>
+                  </div>
+                  </div>
                 </div>
               ))}
             </div>
-            */}
+            
         </div>
     </div>
   )

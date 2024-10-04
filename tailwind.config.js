@@ -12,12 +12,17 @@ module.exports = {
         foreground: "var(--foreground)",
       },
       animation: {
-        'loop-text': 'loopText 4s infinite',
+        "loop-text": "typing 4s steps(20, end) infinite, blink 0.7s step-end infinite",
+        "blink": "blink 0.7s step-end infinite",
       },
       keyframes: {
         loopText: {
-          '0%, 100%': { transform: 'translateX(0)', opacity: 1 },
-          '50%': { transform: 'translateX(-100%)', opacity: 0 },
+          "0%": { width: "0%" },
+          "100%": { width: "100%" },
+        },
+        blink: {
+          "0%, 100%": { borderColor: "transparent" },
+          "50%": { borderColor: "white" },
         },
       },
     },
@@ -25,8 +30,8 @@ module.exports = {
   plugins: [
     function ({ addBase }) {
       addBase({
-        'html': {
-          'scroll-behavior': 'smooth',
+        html: {
+          "scroll-behavior": "smooth",
         },
       });
     },

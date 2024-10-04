@@ -13,6 +13,11 @@ const nextConfig = {
           hostname: 'pagepro.co',
           pathname: '/**', // Match all paths for pagepro.co
         },
+        {
+          protocol: 'https',
+          hostname: 'images.wallpaperscraft.com',
+          pathname: '/**', 
+        },
       ],
     },
   };

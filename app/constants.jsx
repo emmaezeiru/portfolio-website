@@ -52,16 +52,14 @@ export const techStack = [
   export const serviceData = [
     {
       name: 'Web Application Development',
-      desc: 'Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design user interface design  authoring, including standardised code and proprietary software user experience design and search engine',
+      desc: 'I offer comprehensive web application development services, including building responsive and scalable web solutions, designing intuitive user interfaces, implementing secure backends, and optimizing performance to deliver seamless user experiences tailored to your needs.',
       img: "https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/64/000000/external-web-development-coding-kiranshastry-lineal-color-kiranshastry.png"
     },
     {
       name: 'Backend Development',
-      desc: `Graphic design is a craft where professionals create visual
-      content to communicate messages. By applying visual hierarchy and
-      page layout techniques, designers use typography and pictures to
-      meet users' specific needs and focus on the logic of displaying
-      elements in interactive designs, to optimize the user experience.`,
+      desc: `I specialize in backend development services that include building robust server-side logic, 
+      designing and managing databases, implementing APIs for seamless integration, 
+      and ensuring the scalability and security of your applications to provide a reliable foundation for your software.`,
       img: "https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-backend-no-code-flaticons-flat-flat-icons.png"
     },
     {
