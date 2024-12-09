@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 
 const TypingAnimation = () => {
-  const texts = ["Frontend Developer", "Fullstack Developer"];
+  const texts = ["Backend Developer", "Fullstack Developer"];
   const [currentText, setCurrentText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);

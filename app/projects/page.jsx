@@ -25,16 +25,27 @@ const Projects = () => {
                   <Image
                     alt={el.name || "Tech Icon"}
                     src={el.link}
-                    width={200}
-                    height={200}
+                    width={500}
+                    height={500}
+                    quality={100}
                     class="rounded-t-lg w-full"
                   />
                   <div class="p-5">
                   <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 ">{el.name}</h5>
                   <p class="mb-3 font-normal text-gray-700">{el.note}</p>
-                  <div class="flex justify-between">
+                  <div className="m-2 flex flex-wrap gap-2">
+                    {[el.tagA, el.tagB, el.tagC, el.tagD].map((tag, tagIndex) => (
+                      <span
+                        key={tagIndex}
+                        className="bg-blue-200 text-gray-950 px-3 py-1 rounded-lg text-sm font-medium"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <div class="flex justify-between mt-3">
                     <Link 
-                      href="#"
+                      href={el.live}
                       class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-500 rounded-lg hover:bg-blue-200 focus:ring-4 focus:outline-none focus:ring-blue-300"
                     >
                       Visit Project

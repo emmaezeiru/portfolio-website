@@ -30,7 +30,7 @@ const Homepage = () => {
               </div>*/}
               <TypingAnimation />
             </h1>
-            <p class="mt-3 text-base text-black sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">I am a Frontend / Full-Stack Developer. I am looking to connect with other developers</p>
+            <p class="mt-3 text-base text-black sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">I am a Backend / Full-Stack Developer. I am looking to connect with other developers</p>
             <div class="flex md:justify-start">
               {contactLinks.map((el, index) => (
                 <Link 
