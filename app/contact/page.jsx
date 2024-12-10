@@ -16,7 +16,7 @@ const Contact = () => {
               <p class="mt-4 text-xl text-justify text-gray-800">
                 If you want to know more about me or my work, or if you would just
                 <br />
-                like to say hello, send me a message. I'd love to hear from you.
+                like to say hello, send me a message. Id love to hear from you.
               </p>
             </div>
             <div class="flex justify-between items-center md:items-stretch flex-col md:flex-row pb-24">
