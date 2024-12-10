@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 
 const TypingAnimation = () => {
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const texts = ["Backend Developer", "Fullstack Developer"];
   const [currentText, setCurrentText] = useState("");
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -28,10 +29,10 @@ const TypingAnimation = () => {
       setIsDeleting(false);
       setCurrentIndex((prev) => (prev + 1) % texts.length);
     }
-  }, [charIndex, isDeleting, currentIndex]);
+  }, [charIndex, isDeleting, currentIndex, texts]);
 
   return (
-    <div className=" relative w-[300px] whitespace-nowrap">
+    <div className="relative w-[300px] whitespace-nowrap">
       <span className="text-blue-500 inline-block">{currentText}</span>
       <span className="inline-block border-r-2 border-blue-500 animate-blink h-full"></span>
     </div>
