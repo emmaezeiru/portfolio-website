@@ -14,7 +14,7 @@ const About = () => {
                     A bit about me
                 </h4>
                 <p class="mt-4 text-xl text-justify text-gray-800">
-                    Im a Backend developer and FullStack Developer with experience in designing new features from ideation to production, implementation of wireframes and design flows into high performance software applications. I take into consideration the user experience while writing reusable and efficient code. I passionately combine good design, technology, and innovation in all my projects, which I like to accompany from the first idea to release.Currently, Im focused on the backend development.
+                    Im a Backend developer and FullStack Developer with experience in designing new features from ideation to production, implementation of wireframes and design flows into high performance software applications. I take into consideration the user experience while writing reusable and efficient code. I passionately combine good design, technology, and innovation in all my projects, which I like to accompany from the first idea to release.Currently, I am focused on the backend development, system design and devOps.
                 </p>
             </div>
             <div>
