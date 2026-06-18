@@ -1,4 +1,314 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #09090b;
+    --foreground: #fafafa;
+    --muted: #a1a1aa;
+    --muted-foreground: #71717a;
+    --card: #0f0f12;
+    --card-hover: #141418;
+    --border: #27272a;
+    --border-subtle: #1f1f23;
+    --accent: #818cf8;
+    --accent-muted: rgba(129, 140, 248, 0.12);
+    --accent-glow: rgba(129, 140, 248, 0.25);
+    --success: #22c55e;
+    --success-muted: rgba(34, 197, 94, 0.12);
+    --gradient-start: #818cf8;
+    --gradient-end: #6366f1;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  ::selection {
+    background: rgba(129, 140, 248, 0.3);
+    color: #fafafa;
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply mx-auto max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-label {
+    @apply text-xs font-medium uppercase tracking-[0.2em] text-accent;
+  }
+
+  .section-title {
+    @apply text-3xl font-semibold tracking-tight text-foreground sm:text-4xl;
+  }
+
+  .section-description {
+    @apply mt-4 max-w-2xl text-base leading-relaxed text-muted;
+  }
+
+  .glass-card {
+    @apply rounded-xl border border-border backdrop-blur-sm;
+    background-color: rgba(15, 15, 18, 0.8);
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-[var(--gradient-start)] to-[var(--gradient-end)] bg-clip-text text-transparent;
+  }
+
+  .grid-bg {
+    background-image: linear-gradient(
+        rgba(129, 140, 248, 0.03) 1px,
+        transparent 1px
+      ),
+      linear-gradient(90deg, rgba(129, 140, 248, 0.03) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+
+  .hero-glow {
+    background: radial-gradient(
+      ellipse 80% 50% at 50% -20%,
+      rgba(129, 140, 248, 0.15),
+      transparent
+    );
+  }
+
+  .bg-success-muted {
+    background-color: var(--success-muted);
+  }
+
+  .bg-accent-muted {
+    background-color: var(--accent-muted);
+  }
+}
+
+@layer utilities {
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-up-delay-1 {
+    animation: fadeUp 0.6s ease-out 0.1s forwards;
+    opacity: 0;
+  }
+
+  .animate-fade-up-delay-2 {
+    animation: fadeUp 0.6s ease-out 0.2s forwards;
+    opacity: 0;
+  }
+
+  .animate-fade-up-delay-3 {
+    animation: fadeUp 0.6s ease-out 0.3s forwards;
+    opacity: 0;
+  }
+
+  .animate-pulse-dot {
+    animation: pulseDot 2s ease-in-out infinite;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseDot {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(0.95);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up,
+  .animate-fade-up-delay-1,
+  .animate-fade-up-delay-2,
+  .animate-fade-up-delay-3 {
+    animation: none;
+    opacity: 1;
+  }
+} */
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --navy: #0a192f;
+    --light-navy: #112240;
+    --lightest-navy: #233554;
+    --light-slate: #a8b2d1;
+    --lightest-slate: #ccd6f6;
+    --slate: #8892b0;
+    --dark-slate: #495670;
+    --green: #64ffda;
+
+    --background: var(--navy);
+    --foreground: var(--lightest-slate);
+    --muted: var(--light-slate);
+    --muted-foreground: var(--slate);
+    --card: var(--light-navy);
+    --card-hover: var(--lightest-navy);
+    --border: var(--lightest-navy);
+    --border-subtle: #1d2d50;
+    --accent: var(--green);
+    --accent-muted: rgba(100, 255, 218, 0.1);
+    --accent-glow: rgba(100, 255, 218, 0.15);
+    --success: var(--green);
+    --success-muted: rgba(100, 255, 218, 0.1);
+    --gradient-start: #64ffda;
+    --gradient-end: #57cbff;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--navy);
+    color: var(--lightest-slate);
+    font-family: var(--font-ntr), NTR, sans-serif;
+    @apply antialiased;
+  }
+
+  ::selection {
+    background: rgba(100, 255, 218, 0.3);
+    color: var(--lightest-slate);
+  }
+}
+
+@layer components {
+  .section-container {
+    @apply mx-auto max-w-6xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .section-label {
+    @apply text-xs font-medium uppercase tracking-[0.2em] text-accent;
+  }
+
+  .section-title {
+    @apply text-3xl font-semibold tracking-tight text-foreground sm:text-4xl;
+  }
+
+  .section-description {
+    @apply mt-4 max-w-2xl text-base leading-relaxed text-muted;
+  }
+
+  .glass-card {
+    @apply rounded-xl border border-border backdrop-blur-sm;
+    background-color: var(--light-navy);
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-[var(--gradient-start)] to-[var(--gradient-end)] bg-clip-text text-transparent;
+  }
+
+  .grid-bg {
+    background-image: linear-gradient(
+        rgba(100, 255, 218, 0.03) 1px,
+        transparent 1px
+      ),
+      linear-gradient(90deg, rgba(100, 255, 218, 0.03) 1px, transparent 1px);
+    background-size: 64px 64px;
+  }
+
+  .hero-glow {
+    background: radial-gradient(
+      ellipse 80% 50% at 50% -20%,
+      rgba(100, 255, 218, 0.08),
+      transparent
+    );
+  }
+
+  .bg-success-muted {
+    background-color: var(--success-muted);
+  }
+
+  .bg-accent-muted {
+    background-color: var(--accent-muted);
+  }
+}
+
+@layer utilities {
+  .animate-fade-up {
+    animation: fadeUp 0.6s ease-out forwards;
+  }
+
+  .animate-fade-up-delay-1 {
+    animation: fadeUp 0.6s ease-out 0.1s forwards;
+    opacity: 0;
+  }
+
+  .animate-fade-up-delay-2 {
+    animation: fadeUp 0.6s ease-out 0.2s forwards;
+    opacity: 0;
+  }
+
+  .animate-fade-up-delay-3 {
+    animation: fadeUp 0.6s ease-out 0.3s forwards;
+    opacity: 0;
+  }
+
+  .animate-pulse-dot {
+    animation: pulseDot 2s ease-in-out infinite;
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulseDot {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: scale(0.95);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-fade-up,
+  .animate-fade-up-delay-1,
+  .animate-fade-up-delay-2,
+  .animate-fade-up-delay-3 {
+    animation: none;
+    opacity: 1;
+  }
+}
